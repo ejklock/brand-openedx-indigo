@@ -14,5 +14,8 @@
   "homepage": "https://github.com/edly-io/brand-openedx#readme",
   "publishConfig": {
     "access": "public"
+  },
+  "scripts": {
+    "postinstall": "node postinstall.js"
   }
 }
