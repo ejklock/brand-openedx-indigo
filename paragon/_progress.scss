@@ -1,0 +1,181 @@
+// progress page style
+.course-tabs-navigation + .container-xl {
+    >.mb-4.justify-content-between {
+        h1 {
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 30px;
+            color: $text-color;
+        }
+    }
+    >.row {
+        >.col-12.col-md-8.p-0 {
+            .rounded.raised-card {
+                border: 1px solid #E5E7EB !important;
+                border-left: 8px solid $primary-light !important;
+                border-radius: 8px !important;
+                box-shadow: none !important;
+                font-size: 16px;
+                .small {
+                    font-size: 16px;
+                }
+                &.grades {
+                    border: none !important;
+                    border-radius: none !important;
+                    padding: 0 !important;
+                    .btn-icon.btn-icon-primary.btn-icon-sm {
+                        width: auto;
+                        height: auto;
+                    }
+                }
+                h2 {
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-weight: 600;
+                }
+                .bg-warning-100 {
+                    padding: 10px 15px !important;
+                    background: $primary-light !important;
+                    .h4 {
+                        font-size: 13px;
+                        color: $primary;
+                        font-weight: 600;
+                    }
+                    svg {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+        >.col-12.col-md-4.p-0.px-md-4 {
+            .bg-light-200.raised-card {
+                background: $primary-light !important;
+                box-shadow: none !important;
+                .pgn__card-header {
+                    .pgn__card-header-content {
+                        margin-top: 10px;
+                    }
+                    .pgn__card-header-title-md {
+                        font-size: 18px;
+                    }
+                }
+                .pgn__card-section {
+                    padding-top: 0;
+                }
+                .btn.btn-outline-brand {
+                    padding: 7px 13px !important;
+                    border: 1px solid #15376D !important;
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    margin: 0 !important;
+                    background: #15376D;
+                }
+            } 
+            section.mb-4.x-small {
+                background-color: $primary-light;
+                font-size: 16px;
+                border-radius: 8px;
+                padding: 20px;
+                ul {
+                    list-style: none;
+                    a {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+    .donut-ring.complete-stroke, .donut-segment.complete-stroke, .donut-hole.complete-stroke {
+        stroke: $primary;
+    }
+    .donut-ring.incomplete-stroke, .donut-segment.incomplete-stroke, .donut-hole.incomplete-stroke {
+        stroke: $primary-light;
+    }
+    svg.donut {
+        @include media-breakpoint-up(sm) {
+            float: right;
+        }
+    }   
+    .donut-chart-text {
+        .donut-chart-number {
+            color: $text-color;
+        }
+        .donut-chart-label {
+            color: #4B5563;
+        }
+    }
+    .grade-bar .grade-bar__base {
+        fill: $primary-light;
+    }
+}
+#root {
+    .grades {
+        .pgn__data-table {
+            thead {
+                th {
+                    background: none !important;
+                    border-bottom: 1px solid #E5E7EB !important;
+                    span.h5 {
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                }
+            }
+            &.is-striped tr:nth-child(even) {
+                background: none !important;
+            }
+        }
+        .pgn__data-table-wrapper {
+            border: 1px solid #E5E7EB !important;
+            border-left: 8px solid $primary-light !important;
+            border-radius: 8px !important;
+            box-shadow: none !important;
+            .border-primary {
+                border-color: transparent !important;
+            }
+            .small, .x-small {
+                font-size: 16px !important;
+            }
+            #weighted-grade-summary.small {
+                color: $primary !important;
+                font-weight: 600 !important;
+                font-size: 13px !important;
+            }
+        }
+    }
+}
+#non-passing-grade-tooltip {
+    background: $primary;
+    border-color: $primary;
+    filter: none;
+    .arrow {
+        &:before {
+            border-top-color: $primary !important;
+        }
+        &:after {
+            border-top-color: $primary !important;
+        }
+    }
+    .popover-body {
+        color: white !important;
+    }
+}
+#minimum-grade-tooltip.bg-primary-500 {
+    background: #9CA3AF !important;
+    border-color: #9CA3AF !important;
+    filter: none;
+    .arrow {
+        &:before {
+            border-bottom-color: #9CA3AF !important;
+        }
+        &:after {
+            border-bottom-color: #9CA3AF !important;
+        }
+    }
+    .popover-body {
+        color: white !important;
+    }
+}

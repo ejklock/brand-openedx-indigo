@@ -1,5 +1,60 @@
-$primary: #15376D;
-$primary-light: #F2F7F8;
-$light-drak: #374151;
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+$primary: #AEC7F6;
+$primary-light: #292A2C;
+$light-drak: #374151;
+$text-color: #F8F8F8;
+$text-color-primary: #DDDFE2;
+$border-color: #777792;
+
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: $text-color;
+}
+#password-requirement-top .arrow:before {
+    border-top-color: #36383B;
+}
+#password-requirement-top .tooltip-inner {
+    background: #36383B;
+    color: $text-color;
+}
+#root {
+    .text-body {
+        color: $text-color !important;
+    }
+    .form-control {
+        background: none !important;
+        border-color: $border-color;
+    }
+    .form-control:focus ~ .pgn__form-control-floating-label .pgn__form-control-floating-label-text, 
+    .form-control.has-value ~ .pgn__form-control-floating-label .pgn__form-control-floating-label-text {
+        background:  $primary-light;
+    }
+    .layout {
+        background: #0D0D0E;
+        &:before {
+            box-shadow: 400px 400px 143px 90px rgba(#211E82, 0.45);
+        }
+        &:after {
+            box-shadow: 400px -400px 143px 90px rgba(#211E82, 0.45);
+        }
+        .content {
+            background: $primary-light;
+            .nav.nav-tabs {
+                border-color: $border-color;
+            }
+            #main-content{
+                .btn-brand {
+                    color: #112F6B;
+                }
+            }
+        }
+        .bg-primary-400 {
+            h1 {
+                color: $text-color !important;
+                .text-accent-a {
+                    color: $text-color !important;
+                }
+            }
+        }
+    }
+}
