@@ -15,6 +15,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     background: $light-overlay !important;
     color: $text-color !important;
 }
+.text-gray-700 {
+    color: $text-color-primary !important;
+}
 .text-success {
     color: $success !important;
 }
@@ -33,6 +36,15 @@ a.course-card-title {
     color: $text-color;
 }
 #root {
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus, 
+    input:-webkit-autofill:active{
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: $text-color;
+        transition: background-color 5000s ease-in-out 0s;
+        box-shadow: none;
+    }
     .text-body {
         color: $text-color !important;
     }
@@ -55,6 +67,9 @@ a.course-card-title {
     .alert-heading, .pgn__form-text-invalid, .alert-message-content, .alert-danger .alert-icon {
         color: $danger !important;
     }
+    .alert-success .alert-icon, .alert-success .alert-heading, .alert-success .alert-message-content {
+        color: $success !important;
+    }
     .layout {
         background: #0D0D0E;
         &:before {
@@ -72,8 +87,12 @@ a.course-card-title {
                 .btn-brand {
                     color: #112F6B;
                 }
-                .alert-danger {
+                .alert-danger, .alert-success {
                     background: $light-overlay;
+                    a {
+                        background: none !important;
+                        padding: 0 !important;
+                    }
                 }
             }
         }
@@ -335,4 +354,7 @@ a.course-card-title {
             background: none;
         }
     }
+}
+footer.tutor-container .copyright-site {
+    color: $text-color-primary;
 }
