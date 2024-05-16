@@ -63,9 +63,9 @@
 #pgn__checkpoint[data-popper-placement^=top] > #pgn__checkpoint-arrow:after {
     border-top: solid 15px $primary-light;
 }
-[dir="ltr"] .pgn__checkpoint[data-popper-placement^=left] > #pgn__checkpoint-arrow::after {
+.pgn__checkpoint[data-popper-placement^=left] > #pgn__checkpoint-arrow::after {
     border-left: solid 15px $primary-light;
 }
-[dir="ltr"] .pgn__checkpoint[data-popper-placement^=right] > #pgn__checkpoint-arrow::after {
+.pgn__checkpoint[data-popper-placement^=right] > #pgn__checkpoint-arrow::after {
     border-right: solid 15px $primary-light;
 }

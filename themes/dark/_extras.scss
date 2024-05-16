@@ -35,6 +35,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 a.course-card-title {
     color: $text-color;
 }
+.text-dark-500 {
+    color: $text-color  !important;
+}
+.text-gray-500 {
+    color: $text-color-primary;
+}
 #root {
     input:-webkit-autofill,
     input:-webkit-autofill:hover, 
@@ -357,4 +363,112 @@ a.course-card-title {
 }
 footer.tutor-container .copyright-site {
     color: $text-color-primary;
+}
+#root header.customise.learning-header {
+    box-shadow: 0px 1px 2px 0px rgba(255,255,255,0.8),0px 1px 3px 0px rgba(255,255,255,0.1);
+   .course-title-lockup {
+        .nav-course {
+            a {
+                color: $text-color;
+                border-bottom: 2px solid transparent;
+                &.active, &:hover {
+                    color:  $text-color;
+                    border-bottom: 2px solid  $text-color;
+                }
+            }
+        }
+   }
+}
+#courseHome-outline {
+    .pgn_collapsible {
+        border: 1px solid $primary-light;
+        border-left: 8px solid $primary-light;
+        background: none !important;
+    }
+}
+.btn-outline-primary:hover {
+    background-color: transparent;
+}
+.course-tabs-navigation {
+    .nav.nav-underline-tabs {
+        a, button {
+            color: $text-color-primary;
+            &:hover {
+                color: $text-color;
+            }
+            &.active {
+                color: $text-color;
+                border-bottom-color: $text-color
+            }
+        }
+    }
+}
+.pgn__modal-backdrop {
+    background: #393939;
+    opacity: .9;
+}
+.pgn__modal, .pgn__modal-footer {
+    background: $primary-light;
+    .bg-white {
+        background: none !important;
+    }
+}
+#paragon-portal-root .new-user-tour-dialog {
+    .pgn__modal-body-content {
+        p {
+            color: $text-color-primary !important;
+        }
+    }
+    .pgn__action-row {
+        button {
+            border: 1px solid #D1D5DB;
+            color: $text-color;
+            background: transparent;
+            &.btn-brand {
+                background: $primary !important;
+                border-color: $primary !important;
+            }
+        }
+    }
+}
+#pgn__checkpoint {
+    background: $primary-light;
+    #pgn__checkpoint-title {
+        color: $text-color;
+    }
+    .pgn__checkpoint-body {
+        color: $text-color;
+    }
+    .pgn__checkpoint-action-row {
+        .btn.btn-tertiary {
+            color: $text-color;
+            background: black;
+        }
+    }
+}
+.pgn__modal.pgn__modal-default {
+    .bg-white {
+        .pgn__action-row {
+            button {
+                &.btn-tertiary {
+                    border: 1px solid $text-color;
+                    background: transparent;
+                    color: $text-color;
+                }
+            }
+        }
+        .pgn__form-control-set {
+            .form-control {
+                background: none;
+            }
+            .pgn__form-radio {
+                .pgn__form-label {
+                    color: $text-color;
+                }
+                .pgn__form-radio-input {
+                    border: 1px solid #C4C7CF;
+                }
+            }
+        }
+    }
 }
