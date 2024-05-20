@@ -32,6 +32,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
         color: $text-color !important;
     }
 }
+.dropdown-menu {
+    background: $light-overlay;
+    color: $text-color;
+}
 a.course-card-title {
     color: $text-color;
 }
@@ -39,7 +43,7 @@ a.course-card-title {
     color: $text-color  !important;
 }
 .text-gray-500 {
-    color: $text-color-primary;
+    color: $text-color-primary !important;
 }
 #root {
     input:-webkit-autofill,
@@ -124,7 +128,7 @@ a.course-card-title {
             }
             .hamburger-menu {
                 .line {
-                    background: #767676;
+                    background: $text-color;
                 }
             } 
         }
@@ -379,6 +383,13 @@ footer.tutor-container .copyright-site {
         }
    }
 }
+#root .alert.alert-success {
+    background: $primary-light;
+    a {
+        background: $primary;
+        color: $btn-color;
+    }
+}
 #courseHome-outline {
     .pgn_collapsible {
         border: 1px solid $primary-light;
@@ -470,5 +481,195 @@ footer.tutor-container .copyright-site {
                 }
             }
         }
+    }
+}
+
+.sequence-navigation .btn {
+    border-color: $primary-light !important;
+    color: $text-color !important;
+}
+.sequence {
+    border-color: $primary-light !important;
+}
+#root {
+    .sequence-container {
+        .sequence {
+            #courseware-sequenceNavigation {
+                .sequence-navigation-tabs {
+                    button {
+                        color: white;
+                        border-color: $border-color;
+                        &.complete {
+                            background: $primary-light;
+                            color: $primary;
+                            &:after {
+                                background: $primary-light !important;
+                            }
+                            &.active {
+                                &:after {
+                                    background: $primary !important;
+                                }
+                            }
+                            .text-success {
+                                color: $primary !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#root header.site-header-mobile {
+    background: $body-bg;
+    box-shadow: 0px 1px 2px 0px rgba(255, 255, 255, 0.8), 0px 1px 3px 0px rgba(255, 255, 255, 0.1) !important;
+    .menu {
+        button {
+            .hamburger-menu {
+                .line {
+                    background: $text-color;
+                }
+            }
+        }
+        .menu-content {
+            box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.8), 0px 4px 6px -2px rgba(255, 255, 255, 0.05), 0px 10px 15px -3px rgba(255, 255, 255, 0.1);
+            background: $light-overlay;
+            a {
+                color: $text-color;
+                &:hover {
+                    color: $text-color;
+                    background: $body-bg;
+                }
+            }
+        }
+    }
+}
+#root header.site-header-desktop {
+    background: $body-bg;
+    box-shadow: 0px 1px 2px 0px rgba(255, 255, 255, 0.8), 0px 1px 3px 0px rgba(255, 255, 255, 0.1);
+    .main-nav {
+        a.nav-link {
+            color: $text-color;
+            &:hover {
+                color: $text-color;
+                border-bottom: 2px solid $text-color;
+            }
+        }
+    }
+    .menu {
+        button {
+            background: $primary-light !important;
+            color: $primary;
+            &:after {
+                border: 2px solid $primary;
+            }
+        }
+        .menu-content {
+            background: $light-overlay;
+            box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.8), 0px 4px 6px -2px rgba(255, 255, 255, 0.05), 0px 10px 15px -3px rgba(255, 255, 255, 0.1);
+            a {
+                color: $text-color;
+                &:hover {
+                    background: $body-bg;
+                    color: $text-color;                         ;
+                }
+            }
+        }
+    }
+}
+.page__account-settings {
+    #delete-account {
+        button.btn-outline-danger {
+            color: $text-color;
+            background: none;
+        }
+    }
+    .pgn-transition-replace-group + .form-group {
+        border: 1px solid $primary-light;
+        border-left: 8px solid $primary-light;
+    }
+    .pgn-transition-replace-group {
+        border: 1px solid $primary-light;
+        border-left: 8px solid $primary-light;
+        .form-group {
+            .d-flex.align-items-start {
+                button {
+                    color: $btn-color;
+                }
+            }
+        }
+        form {
+            >p {
+                button {
+                    color: $btn-color;
+                    &.btn-outline-primary {
+                        background: none !important;
+                        color: $text-color;
+                    }
+                }
+            }
+        }
+    } 
+}
+// profile page style
+.profile-page {
+    .profile-page-bg-banner {
+        &:after {
+            box-shadow: 110px -100px 100px 90px rgba(33, 30, 130, 0.45);
+            -webkit-box-shadow: 110px -100px 100px 90px rgba(33, 30, 130, 0.45);
+            -moz-box-shadow: 110px -100px 100px 90px rgba(33, 30, 130, 0.45);
+        }
+    }
+    .container-fluid {
+        .row {
+            .pgn-transition-replace-group {
+                border: 1px solid $primary-light;
+                border-left: 8px solid $primary-light;
+                .col-sm-6.d-flex.align-items-stretch {
+                    .card-body {
+                        a.default-link {
+                            &:after {
+                                color: $btn-color
+                            }
+                            
+                        }
+                    }
+                }
+                .editable-item-header {
+                    button {
+                        color: $btn-color;
+                    }
+                }
+                .editable-item-header + div {
+                    button {
+                        color: $text-color;
+                    }
+                }
+                .editable-item-header + .list-unstyled {
+                    li {
+                        button {
+                            color: $text-color;
+                        }
+                    }
+                }
+            }
+            form {
+                .form-group {
+                    &.flex-shrink-0.flex-grow-1 {
+                        button {
+                            color: $btn-color;
+                            &.btn-link {
+                                background: none !important;
+                                color: $text-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .rounded-circle.bg-light {
+        background: $primary-light !important;
     }
 }
