@@ -1,9 +1,21 @@
 body {
-    color: $text-color;
-    background: $body-bg;
+    color: $text-color !important;
+    background: $body-bg !important;
+    * {
+        accent-color: $primary;
+    }
 }
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+a {
+    color: $primary;
+}
+.text-muted {
     color: $text-color;
+ }
+html {
+    background: $body-bg !important;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .text-dark-700 {
+    color: $text-color !important;
 }
 #password-requirement-left .arrow:before {
     border-left-color: $light-overlay !important;
@@ -18,8 +30,137 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .text-gray-700 {
     color: $text-color-primary !important;
 }
+.btn-outline-dark {
+    color: #fff !important;
+    border-color: #fff !important;
+    background: none !important;
+}
+div[data-testid=instructor-toolbar] {
+    .bg-primary {
+        background: $primary-light !important;
+    }
+}
+.alert-info {
+    background: $primary-light;
+    .alert-icon {
+        svg {
+            path {
+                fill: $danger;
+            }
+        }
+    }
+}
 .text-success {
     color: $success !important;
+}
+.bs-tooltip-top .arrow:before {
+    border-color: $light-overlay;
+}
+.tox {
+    .tox-collection__item {
+        color: $text-color;
+    }
+    .tox-dialog-wrap__backdrop {
+        background: rgba(#000, .8);
+    }
+    .tox-label, .tox-toolbar-label {
+        color: $text-color;
+    }
+    .tox-textfield, .tox-toolbar-textfield, .tox-listboxfield .tox-listbox--select, .tox-textarea, select {
+        background: $primary-light !important;
+        color: $text-color !important;
+        &:focus {
+            border-color: $primary;
+        }
+    }
+    .tox-dialog__footer {
+        background: $primary-light !important;
+        color: $text-color $text-color !important;
+        .tox-button {
+            background: $primary !important;
+            color: $btn-color !important;
+            border-color: $primary !important;
+            &.tox-button--secondary {
+                background: none !important;
+                color: $text-color !important;
+                border-color: $text-color !important;
+            }
+        }
+    }
+    .tox-dialog {
+        background: $primary-light;
+        color: $text-color;
+        border-color: none;
+        .tox-dialog__header {
+            background: none;
+            color: $text-color;
+            button {
+                background: none !important;
+                svg {
+                    path {
+                        fill: $text-color !important;
+                    }
+                }
+            }
+        }
+        .tox-dialog__body-nav-item--active {
+            background: none;
+            color: $text-color;
+            border-color: $primary;
+        }
+    }
+}
+.tox-tinymce {
+    border-color: $border-color !important;
+}
+.bg-light-200.post-preview {
+    background: $body-bg !important;
+}
+.tox .tox-statusbar, .tox .tox-toolbar {
+    background: $primary-light !important;
+    border-color: $border-color !important;
+    scrollbar-color: white transparent;
+    * {
+        color: $text-color !important;
+        svg {
+            path {
+                fill: $text-color !important;
+            }
+        }
+    }
+}
+.tox .tox-menu, .tox .tox-toolbar {
+    background: $primary-light !important;
+    border-color: $border-color !important;
+    * {
+        background: none !important;
+        color: $text-color !important;
+        svg {
+            path {
+                fill: $text-color !important;
+            }
+        }
+    }
+}
+.tox-toolbar__primary, .tox-toolbar__overflow {
+    background: $primary-light !important;
+    border-color: $border-color !important;
+    .tox-toolbar__group {
+        border-color: $border-color !important;
+    }
+    .tox-tbtn {
+        color: $text-color !important;
+        background: none !important;
+        svg {
+            path {
+                fill: $text-color !important;
+            }
+        }
+    }
+}
+.unit-navigation .previous-button {
+    border-color: $text-color-primary;
+    color: $text-color-primary;
 }
 .react-loading-skeleton {
     --base-color: #36383B;
@@ -418,10 +559,50 @@ footer.tutor-container .copyright-site {
     background: #393939;
     opacity: .9;
 }
+.pgn__modal-header {
+    background: none;
+}
+.text-gray-900, a.text-gray-900:hover {
+    color: $text-color !important;
+}
 .pgn__modal, .pgn__modal-footer {
     background: $primary-light;
+    box-shadow: none;
     .bg-white {
         background: none !important;
+    }
+    .pgn__action-row {
+        button {
+            border: 1px solid #D1D5DB !important;
+            color: $text-color !important;
+            background: transparent !important;
+            &.btn-brand {
+                background: $primary !important;
+                border-color: $primary !important;
+            }
+            &.btn-danger {
+                background: $danger !important;
+                border-color: $danger !important;
+                color: $text-color !important;
+            }
+            &.btn-primary {
+                background: $primary !important;
+                border-color: $primary !important;
+                color: $btn-color !important;
+            }
+        }
+    }
+}
+a.discussion-post {
+    background: $primary-light !important;
+}
+.pgn__modal-body-content {
+    select.form-control {
+        background-color: $primary-light;
+        color: $text-color;
+    }
+    .form-control:focus ~ .pgn__form-control-floating-label .pgn__form-control-floating-label-text, .form-control.has-value ~ .pgn__form-control-floating-label .pgn__form-control-floating-label-text {
+        background-color: $primary-light;
     }
 }
 #paragon-portal-root .new-user-tour-dialog {
@@ -432,12 +613,17 @@ footer.tutor-container .copyright-site {
     }
     .pgn__action-row {
         button {
-            border: 1px solid #D1D5DB;
-            color: $text-color;
-            background: transparent;
+            border: 1px solid #D1D5DB !important;
+            color: $text-color !important;
+            background: transparent !important;
             &.btn-brand {
                 background: $primary !important;
                 border-color: $primary !important;
+            }
+            &.btn-danger {
+                background: $danger !important;
+                border-color: $danger !important;
+                color: $text-color !important;
             }
         }
     }
@@ -672,4 +858,267 @@ footer.tutor-container .copyright-site {
     .rounded-circle.bg-light {
         background: $primary-light !important;
     }
+}
+// progress page style
+svg {
+    circle.donut-hole {
+        fill: transparent !important;
+    }
+}
+.course-tabs-navigation + .container-xl {
+    >.row {
+        >.col-12.col-md-8.p-0 {
+            .rounded.raised-card {
+                border: 1px solid $primary-light !important;
+                border-left: 8px solid $primary-light !important;
+                &.grades {
+                    border: none !important;
+                }
+            }
+        }
+        >.col-12.col-md-4.p-0.px-md-4 {
+            .bg-light-200.raised-card {
+                .btn.btn-outline-brand {
+                    border: 1px solid $primary !important;
+                    color: $btn-color;
+                    background: $primary;
+                }
+            } 
+            section.mb-4.x-small {
+                background-color: $primary-light;
+            }
+        }
+    }
+    .donut-chart-text {
+        .donut-chart-number {
+            color: $text-color;
+        }
+        .donut-chart-label {
+            color: $text-color-primary;
+        }
+    }
+}
+#root {
+    .grades {
+        .pgn__data-table {
+            thead {
+                th {
+                    border-bottom: 1px solid $border-color !important;
+                }
+            }
+            &.is-striped tr:nth-child(even) {
+                background: none !important;
+            }
+        }
+        .pgn__data-table-wrapper {
+            border: 1px solid $primary-light !important;
+            border-left: 8px solid $primary-light !important;
+            background: none;
+        }
+    }
+}
+#non-passing-grade-tooltip {
+    .popover-body {
+        color: white !important;
+    }
+}
+#minimum-grade-tooltip.bg-primary-500 {
+    background: #9CA3AF !important;
+    border-color: #9CA3AF !important;
+    filter: none;
+    .arrow {
+        &:before {
+            border-bottom-color: #9CA3AF !important;
+        }
+        &:after {
+            border-bottom-color: #9CA3AF !important;
+        }
+    }
+    .popover-body {
+        color: white !important;
+    }
+}
+
+// Discussion style
+
+#root #courseTabsNavigation {
+    background: none;
+}
+#root .header-action-bar {
+    background: none;
+    .navbar {
+        .nav-item {
+            a.nav-link {
+                color: $text-color !important;
+                &:hover {
+                    color: $text-color !important;
+                }
+                &.active {
+                    color: $btn-color !important;
+                }
+            }
+
+        }
+    }
+    .btn.btn-brand {
+        color: $btn-color;
+    }
+}
+#root .header-action-bar + .d-flex.flex-row.position-relative {
+    .bg-light-300 {
+        background: $primary-light !important;
+    }
+    .mx-4 > .bg-white.rounded {
+        background: $primary-light !important;
+    }
+    .hover-card {
+        background: $body-bg !important;
+        border: 1px solid $border-color !important;
+        height: 40px !important;
+        button {
+            background: $body-bg !important;
+            color: $text-color !important;
+            border-radius: 0 !important;
+            &:before {
+                display: none !important;
+            }
+            &:hover {
+                background: $primary-light !important;
+                color: $text-color !important;
+            }
+        }
+
+    }
+    .comments-sort {
+        button.btn.btn-tertiary {
+            border: 1px solid $text-color;
+            background: none !important;
+            color: $text-color;
+        }
+    }
+    .actions-dropdown {
+        .bg-white {
+            background: $body-bg !important;
+            border: 1px solid $border-color !important;
+            button {
+                background: none !important;
+                color: $text-color !important;
+                &:before {
+                    display: none !important;
+                }
+                &:hover {
+                    background: $primary-light !important;
+                }
+            }
+        }
+    }
+    .card, .collapsible-card, .collapsible-card-lg {
+        background: $primary-light !important;
+        .alert-info {
+            background: $body-bg !important;
+        }
+       .alert-danger {
+            background: $body-bg !important;
+        }
+    }
+    .flex-column.position-sticky.d-flex {
+        
+        .pgn-transition-replace-group {
+        .collapsible-body {
+            padding: 10px !important;
+            .list-group-flush {
+            width: 33.33%;
+            .filter-menu {
+                font-size: 12px;
+                padding: 0 0 5px !important;
+                align-items: flex-start !important;
+                .pgn__icon {
+                width: 20px !important;
+                height: 17px;
+                margin: 0 5px 0 0 !important;
+                }
+                .text-truncate {
+                white-space: normal !important;
+                }
+            }
+            }
+        }
+        }
+    }
+    .d-flex.bg-light-400.flex-column {
+        background: none !important;
+        .post-form {
+            margin-top: 0 !important;
+        .justify-content-end button {
+            padding: 7px 11px !important;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        .font-style.d-flex.flex-row {
+            @include media-breakpoint-down(sm) {
+            display: block !important
+            }
+        }
+        .card {
+            width: 170px !important;
+            @include media-breakpoint-down(sm) {
+            width: 120px !important;
+            }
+            .pgn__card-section {
+                @include media-breakpoint-down(sm) {
+                    padding: 10px !important;
+                }
+            }
+            }
+            }
+        }
+    }
+    .discussion-posts {
+        .d-flex.flex-row.border-bottom.border-light-400 {
+            font-size: 14px;
+            button {
+                min-width: 98px !important;
+                text-align: left !important;
+            }
+        }
+    }
+    #root {
+    .header-action-bar.shadow-none.border-light-300.border-bottom {
+        padding: 0 15px !important;
+        margin: 0 0 10px;
+        .navbar {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+        h4 {
+            font-size: 14px;
+            font-weight: 700 !important;
+        }
+        button {
+            font-size: 14px;
+        }
+    }
+ }
+ #root .header-action-bar.shadow-none.border-light-300.border-bottom button {
+    color: $text-color;
+ }
+ .flex-row.d-flex.flex-row.position-relative .px-4.bg-white {
+    background: $primary-light !important;
+ }
+ .content-tools {
+    .trigger {
+        color: $text-color;
+        background: $primary-light;
+        border-color: $primary-light;
+    }
+    .btn-link {
+        color: $primary !important;
+    }
+ }
+ .calculator .calculator-content {
+    background-color: $primary-light;
+    box-shadow: none;
+}
+.table {
+    color: $text-color;
 }
