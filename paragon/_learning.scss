@@ -28,6 +28,16 @@
         .align-middle.col-6 {
             padding-left: 0;
         }
+        .d-flex.row {
+            .col-7.ml-3.text-dark-500 {
+                flex: 0 0 83.33333333%;
+                max-width: 83.33333333%;
+            }
+            .row {
+                margin: 0;
+                padding: 0 0 0 40px;
+            }
+        }
     }
     .collapsible-body {
         padding: 0 0 0 56px;
