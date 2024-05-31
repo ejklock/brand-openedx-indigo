@@ -25,6 +25,9 @@
         .text-success {
             color: $primary !important;
         }
+        .align-middle.col-6 {
+            padding-left: 0;
+        }
     }
     .collapsible-body {
         padding: 0 0 0 56px;
@@ -183,6 +186,14 @@ div[data-learner-type=b2c_learner] {
                     }
                 }
             }
+        }
+    }
+}
+#courseHome-dates {
+    .small {
+        font-size: 14px !important;
+        .font-weight-bold {
+            font-weight: 400 !important;
         }
     }
 }

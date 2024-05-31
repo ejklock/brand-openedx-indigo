@@ -478,6 +478,9 @@ a.course-card-title {
 }
 #no-courses-content-view {
     background: $light-overlay;
+    .btn.btn-brand{
+        color: $btn-color !important;
+    }
 }
 
 // style sheet component
@@ -723,9 +726,10 @@ a.discussion-post {
             background: $light-overlay;
             a {
                 color: $text-color;
+                background: $light-overlay !important;
                 &:hover {
                     color: $text-color;
-                    background: $body-bg;
+                    background: $body-bg !important;
                 }
             }
         }
@@ -745,10 +749,10 @@ a.discussion-post {
     }
     .menu {
         button {
-            background: $primary-light !important;
-            color: $primary;
+            background: $primary !important;
+            color: $btn-color;
             &:after {
-                border: 2px solid $primary;
+                border: 2px solid $btn-color;
             }
         }
         .menu-content {
@@ -756,8 +760,9 @@ a.discussion-post {
             box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.8), 0px 4px 6px -2px rgba(255, 255, 255, 0.05), 0px 10px 15px -3px rgba(255, 255, 255, 0.1);
             a {
                 color: $text-color;
+                background: $light-overlay !important;
                 &:hover {
-                    background: $body-bg;
+                    background: $body-bg !important;
                     color: $text-color;                         ;
                 }
             }
@@ -800,6 +805,22 @@ a.discussion-post {
 }
 // profile page style
 .profile-page {
+    .alert-content.alert.alert-danger {
+        background: $primary-light;
+        padding: 10px;
+    }
+    .profile-avatar-menu-container {
+        .dropdown {
+            .dropdown-menu {
+                a.dropdown-item {
+                    color: $text-color;
+                    &:hover {
+                        background: $body-bg;
+                    }
+                }
+            }
+        }
+    }
     .profile-page-bg-banner {
         &:after {
             box-shadow: 110px -100px 100px 90px rgba(33, 30, 130, 0.45);
@@ -1121,4 +1142,17 @@ svg {
 }
 .table {
     color: $text-color;
+}
+.btn-icon.btn-icon-black {
+    color: $text-color;
+}
+input::placeholder {
+    opacity: .9;
+    color: $text-color;
+  }
+* {
+  scrollbar-color: $text-color $body-bg;
+}
+.bg-success-100 {
+    background: #292A2C !important;
 }
