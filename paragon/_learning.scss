@@ -130,7 +130,16 @@
                 color: $text-color;
             }
         }
+        .col-12.col-md-auto.p-0 {
+            .btn {
+                font-size: 16px !important;
+            }
+        }
     }
+}
+#root .course-outline-tab .col-12.col-md-auto.p-0 .btn {
+    background: none !important;
+    color: $primary !important;
 }
 .course-tabs-navigation {
     padding-top: 20px;

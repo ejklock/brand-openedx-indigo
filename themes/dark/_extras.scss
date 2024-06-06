@@ -477,7 +477,8 @@ a.course-card-title {
     }
 }
 #no-courses-content-view {
-    background: $light-overlay;
+    background: $body-bg;
+    border: 1px solid $border-color;
     .btn.btn-brand{
         color: $btn-color !important;
     }
@@ -757,7 +758,7 @@ a.discussion-post {
         }
         .menu-content {
             background: $light-overlay;
-            box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.8), 0px 4px 6px -2px rgba(255, 255, 255, 0.05), 0px 10px 15px -3px rgba(255, 255, 255, 0.1);
+            box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.8), 0px 4px 6px -2px rgba(255, 255, 255, 0.05), 0px 10px 15px -3px rgba(255, 255, 255, 0.1) !important;
             a {
                 color: $text-color;
                 background: $light-overlay !important;
@@ -822,10 +823,11 @@ a.discussion-post {
         }
     }
     .profile-page-bg-banner {
+        background: none !important;
         &:after {
-            box-shadow: 110px -100px 100px 90px rgba(33, 30, 130, 0.45);
-            -webkit-box-shadow: 110px -100px 100px 90px rgba(33, 30, 130, 0.45);
-            -moz-box-shadow: 110px -100px 100px 90px rgba(33, 30, 130, 0.45);
+            box-shadow: 110px -100px 100px 90px rgba(#36383B, 0.55);
+            -webkit-box-shadow: 110px -100px 100px 90px rgba(#36383B, 0.55);
+            -moz-box-shadow: 110px -100px 100px 90px rgba(#36383B, 0.55);
         }
     }
     .container-fluid {
@@ -867,7 +869,7 @@ a.discussion-post {
                         button {
                             color: $btn-color;
                             &.btn-link {
-                                background: none !important;
+                                background: $body-bg !important;
                                 color: $text-color;
                             }
                         }
@@ -1155,4 +1157,55 @@ input::placeholder {
 }
 .bg-success-100 {
     background: #292A2C !important;
+}
+#root {
+    .course-outline-tab {
+        .raised-card {
+            .pgn__card-header-actions {
+                a {
+                    color: $btn-color !important;
+                }
+            }
+        }
+        .pgn__card-header-content {
+            .pgn__card-header-actions {
+                a {
+                    color: $btn-color !important;
+                }
+            }
+        }
+    }
+}
+.pgn__modal-body-content {
+    .alert-warning {
+        background: none !important;
+    }
+    .form-control {
+        background: none !important;
+        border: 1px solid $border-color;
+        color: $text-color;
+    }
+}
+.pgn__card-header-title-md {
+    color: $text-color !important;
+}
+.popover {
+    background: $primary-light;
+    &.bs-popover-top {
+        .arrow:before, .arrow:after  {
+            border-top-color: $primary-light;
+        }
+    }
+}
+.bs-popover-top#non-passing-grade-tooltip .popover-body {
+    color: $btn-color !important;
+}
+button.mr-3.btn.btn-link.btn-inline {
+    color: $primary !important;
+}
+button.p-2.btn.btn-inline {
+    color: $text-color !important;
+}
+.sequence-navigation .btn.complete {
+    background: $primary-light;
 }
