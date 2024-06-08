@@ -1,34 +1,24 @@
 // Use this file to set SASS variables for @edx/paragon
 // See _variables.scss in https://github.com/edx/paragon/blob/master/scss/core/ for reference
 
-$primary : {{ UFMT_EM_REDE_PRIMARY }};
-$primary-light: {{ UFMT_EM_REDE_PRIMARY_LIGHT }};
-$secondary: {{ UFMT_EM_REDE_SECONDARY }};
+$primary : #311B7B;
+$primary-light: #F2F7F8;
+$secondary: #454545;
 
-$brand: {{ UFMT_EM_REDE_BRAND }};
-$success: {{ UFMT_EM_REDE_SUCCESS }};
-$info: {{ UFMT_EM_REDE_INFO }};
-$danger: {{ UFMT_EM_REDE_DANGER }};
-$warning: {{ UFMT_EM_REDE_WARNING }};
-$light: {{ UFMT_EM_REDE_LIGHT }};
-$light-drak: {{ UFMT_EM_REDE_LIGHT_DRAK }};
-$drak: {{ UFMT_EM_REDE_DRAK }};
-$accent-a: {{ UFMT_EM_REDE_ACCENT_A }};
-$accent-b: {{ UFMT_EM_REDE_ACCENT_B }};
-
-
+$brand: #311B7B;
+$success: #178253;
+$info: #006DAA;
+$danger: #C32D3A;
+$warning: #FFD900;
+$light: #E1DDDB;
+$light-drak: #374151;
+$drak: #111827;
+$accent-a: #00BBF9;
+$accent-b: #FFEE88;
 
 
-{% if UFMT_EM_REDE_FONT_FAMILY != "" %}
-$font-family-sans-serif: {{ UFMT_EM_REDE_FONT_FAMILY }} !default;
-$font-family-title: {{ UFMT_EM_REDE_FONT_FAMILY }};
 
-$monospace: {{ UFMT_EM_REDE_FONT_FAMILY }} !default;
-$serif: {{ UFMT_EM_REDE_FONT_FAMILY }} !default;
 
-// newer variables/standards
-$f-serif: {{ UFMT_EM_REDE_FONT_FAMILY }} !default;
-$f-monospace: {{ UFMT_EM_REDE_FONT_FAMILY }} !default;
-{% endif %}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
