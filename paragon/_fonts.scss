@@ -1,1 +1,16 @@
-// Add any font imports or definitions here
+$static-path: '..' !default;
+
+{{ UFMT_EM_REDE_FONTS }}
+
+/* Example:
+
+@font-face {
+    font-family: 'font name';
+    src: url('#{$static-path}/fonts/font_name-Regular.woff2') format('woff2'),
+        url('#{$static-path}/fonts/font_name-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+*/
