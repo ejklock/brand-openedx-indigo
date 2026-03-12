@@ -17,7 +17,7 @@
         "actions": {
           "default": "{color.primary.100}"
         },
-        "$value": "#8e9fbf",
+        "$value": "#A7B9FF",
         "$description": "Primary color of level 100."
       },
       "500": {
@@ -25,11 +25,11 @@
         "actions": {
           "default": "{color.primary.500}"
         },
-        "$value": "#747e92",
+        "$value": "#5470E8",
         "$description": "Primary color of level 500."
       },
       "base": {
-        "$value": "#AEC7F6",
+        "$value": "#7B9FFF",
         "source": "$primary",
         "actions": {
           "default": "{color.primary.base}"
@@ -89,7 +89,7 @@
         "$description": "Text primary color, dark theme."
       },
       "button": {
-        "$value": "#112F6B",
+        "$value": "#0A1A6E",
         "source": "$btn-color",
         "actions": {
           "default": "{color.text.button}"
